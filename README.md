@@ -4,9 +4,9 @@
 
 ### Solutions vs Design
 
-<img width="298" alt="ApplicationFrameHost_hnqSZwRIVQ" src="https://user-images.githubusercontent.com/72163962/133396090-0b2c06da-c564-4559-9e9b-3582690a1c8a.png">
-                        vs
-<img width="335" alt="chrome_YIF4tO8yxt" src="https://user-images.githubusercontent.com/72163962/133396016-b085e536-252a-4067-86e0-33e8a61f0b19.png">
+<img width="298" alt="ApplicationFrameHost_hnqSZwRIVQ" src="https://user-images.githubusercontent.com/72163962/133396090-0b2c06da-c564-4559-9e9b-3582690a1c8a.png"> vs <img width="335" alt="chrome_YIF4tO8yxt" src="https://user-images.githubusercontent.com/72163962/133396016-b085e536-252a-4067-86e0-33e8a61f0b19.png">
+                      
+
 
 
 <img width="278" alt="ApplicationFrameHost_tasXGYMTn6" src="https://user-images.githubusercontent.com/72163962/133396622-b9c8636f-e61e-44d7-b0a1-9993d71d711c.png">
