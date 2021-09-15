@@ -1,0 +1,156 @@
+
+* {
+    font-size: 0.8125rem;
+    font-weight: 300;
+    box-sizing: border-box;
+    font-family: 'Overpass','Ubuntu', sans-serif;
+}
+
+body {
+    min-height: 400vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+// Buttons
+.white_btn {
+    display: inline-block;
+    width: 8.625rem;
+    height: 3rem;
+    padding: 0.900rem 1.0625rem;
+    background-color: $White;
+    border-radius: 50px;
+    cursor: pointer;
+    color: $VeryLightRed;
+    font-weight: 600; 
+    font-size: $font-sm;
+    transition: 300ms ease-in-out;
+    border: none;
+    opacity: 1;
+
+    &:hover {
+        background-color: $VeryLightRed; 
+        color: $White ;  
+    }
+
+    @include breakpoint-down(medium) {
+        width: 7.562rem;
+        height: 2.625rem;
+        padding: 0.775rem 1.1375rem;
+        font-size: $font-xsm;
+    }
+}
+
+.trans_btn {
+    @extend .white_btn;
+    background-color: transparent;
+    color: $White;
+    border: 1px solid $White;
+
+    @include breakpoint-down(medium) {
+        width: 7.562rem;
+        height: 2.625rem;
+        padding: 0.675rem 1.2375rem;
+        font-size: $font-xsm;
+    }
+
+    &:hover {
+        background-color: $White;
+        color: $VeryLightRed;   
+    }
+}
+
+// Text
+h1 {
+    font-size: 2.9375rem;
+
+    @include breakpoint-down(small) {
+        font-size: $font-lg;
+    }
+}
+
+h2 {
+    font-size: 1.875rem;
+
+    @include breakpoint-down(small) {
+        font-size: $font-lg;
+    }
+}
+
+h3 {
+    font-size: $font-lg;
+}
+
+p {
+    line-height: 2;
+}
+
+// Visibility
+.hide-for-desktop {
+    @include breakpoint-up(large) {
+        display: none;
+    }
+}
+
+.hide-for-mobile {
+    @include breakpoint-down(medium) {
+        display: none;
+    }
+}
+// Spacing
+.container {
+    max-width: 69.375rem;
+    margin: 0 auto;
+
+    &--pAll {
+        padding-top: 4.375rem;
+        padding-right: 1.5rem;
+        padding-bottom: 4.375rem;
+        padding-left: 1.5rem;
+
+        @include breakpoint-up(large) {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+
+    }
+
+    &--py {
+        padding-top: 4.375rem;
+        padding-bottom: 4.375rem;
+    }
+
+    &--px {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+
+    }
+
+    &--pt {
+        padding-top: 4.375rem;
+
+        @include breakpoint-up(large) {
+            padding-top: 6rem;
+        }
+    }
+
+    &--pr {
+        padding-right: 1.5rem;
+    }
+
+    &--pb {
+        padding-bottom: 4.375rem;
+        
+        @include breakpoint-up(large) {
+            padding-bottom: 6rem;
+        }
+
+    }
+
+    &--pl {
+        padding-left: 1.5rem;
+    }
+}
+
+

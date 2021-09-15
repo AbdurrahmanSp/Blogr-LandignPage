@@ -1,0 +1,142 @@
+.hero {
+
+    &__title {
+        font-weight: 600;
+        margin: 7.875rem 0 3.875rem 0;
+        color: $VeryDarkBlue;
+
+    }
+
+    .container {
+        position: relative;
+
+        @include breakpoint-up(large) {
+            display: flex;
+        }
+    }
+    
+
+    &__content {
+        position: relative;
+
+        .hero__image {
+            position: relative;
+            background-image: none;
+            min-height: 40.5rem;
+
+            @include breakpoint-up(medium) {
+                min-height: 35.5rem;
+            }
+
+            @include breakpoint-up(large) {
+                position: relative;
+                flex: 1;
+                order: 2;      
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-image: url('/images/illustration-editor-mobile.svg');
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: 50% 100%;
+
+                @include breakpoint-up(medium) {
+                    background-size: 60%;
+                    background-position: 50% 50%;
+                }
+
+                @include breakpoint-up(large) {
+                    content: url('/images/illustration-editor-desktop.svg');
+                    position: absolute;
+                    bottom: 12%;
+                    left: 23%;
+                    max-width: 100%;
+                    max-height: 100%;
+                    background: none; 
+                }
+
+                @include breakpoint-up(xlarge) {
+                    content: url('/images/illustration-editor-desktop.svg');
+                    position: absolute;
+                    bottom: 18%;
+                    left: 23%;
+                    max-width: 100%;
+                    max-height: 100%;
+                    background: none; 
+                }
+
+            }
+        }
+
+        .descriptions {
+            text-align: center;
+
+            @include breakpoint-up(large) {
+                padding: 0;
+                margin-right: 20px;
+                flex: 1;
+                order: 1;
+                text-align: left;
+            }
+
+            .description {
+                &:first-child {
+                    margin-bottom: 5.3125rem;
+                    
+                    @include breakpoint-up(large) {
+                        margin: 5.3125rem 0;
+                    }
+                }
+
+                h3 {
+                    padding: 0 7.5rem;
+                    margin-bottom: 2.125rem;
+                    color: $VeryDarkBlue;
+                    font-weight: 600;
+
+                    @include breakpoint-up(large) {
+                        padding: inherit;
+                    }
+                }
+
+                p {
+                    font-size: $font-med;
+                    color: $VeryDarkGrayshBlue;
+                }
+            }
+        }
+
+        
+            
+        
+    }
+
+    
+
+        
+
+    //     @include breakpoint-down(medium) {
+    //         display: flex;
+    //         align-items: center;
+    //         flex-direction: row;
+    //     }
+
+    //     
+
+    //         
+
+
+           
+
+            
+    //     }
+
+    //     
+        
+
+    // }
+}

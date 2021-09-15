@@ -1,0 +1,101 @@
+.dark-hero {
+    position: relative;
+    margin-top: 15.5rem;
+    background-image: url('/images/bg-pattern-circles.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 130%;
+    background-color: $VeryDarkGreyBlue; 
+    color: $White;
+    border-radius: 0 100px 0 100px;
+
+    @include breakpoint-up(medium) {
+        margin-top: 25.5rem;
+    }
+
+    @include breakpoint-up(large) {
+        margin-top: 25.5rem;
+        background-position: 5% 75%;
+    }
+
+    @include breakpoint-up(xlarge) {
+        margin-top: 25.5rem;
+        background-position: -50% 75%;
+    }
+
+    .container {
+
+        @include breakpoint-up(large) {
+            display: flex;
+        }
+    }
+
+    &__image {
+        position: relative;
+        height: 266px;
+
+        @include breakpoint-up(medium) {
+            height: 346px;
+        }
+
+        @include breakpoint-up(large) {
+            flex: 1;
+            // top: 100%;
+        }
+
+
+
+        &::after {
+            content: '';
+            height: 174%;
+            width: 70%;
+            position: absolute;
+            top: -80%;
+            left: 15%;
+            background-image: url('/images/illustration-phones.svg');
+            background-repeat: no-repeat;
+            background-position-y: 20px;
+            background-size: 100%;
+    
+            @include breakpoint-up(medium) {
+                height: 214%;
+                left: 17%;
+                top: -105%;
+                background-size: 100%;
+            }
+
+            @include breakpoint-up(large) {
+                top: -30%;
+                left: -5%;
+                width: 100%;
+                background-size: 91%;
+            }
+            
+            
+        }
+
+    }
+
+    &__content {
+        padding: 0 1.5rem 6.5625rem 1.5rem;
+
+        @include breakpoint-up(large) {
+            flex: 1;
+            padding-top: 6.5625rem;
+        }
+
+        h2 {
+            padding: 0 4rem;
+            font-size: $font-xlg;
+        }
+
+        p {
+            font-size: $font-med;
+            text-align: center;
+
+            @include breakpoint-up(large) {
+                text-align: left;
+            }
+            
+        }
+    }
+}
