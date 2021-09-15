@@ -1,6 +1,6 @@
 #  Blogr landing page
 
-## Screen shots
+## Screenshots
 
 ### Solutions vs Design
 
