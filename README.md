@@ -29,7 +29,7 @@
 <img width="960" alt="chrome_pZV4hU2fyb" src="https://user-images.githubusercontent.com/72163962/133397125-266fc27b-b797-4789-aaee-b05ee5441df8.png">
 
 
-## Bulit With
+## Built With
 - HTML5
 - SCSS
 - Bootstrap
